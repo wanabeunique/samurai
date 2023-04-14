@@ -1,0 +1,95 @@
+*, body
+  box-sizing: border-box
+
+body
+  --red-color: #F02A2B
+  --black-color: #232323
+  --white-color:  #FFFFFF
+  --gray-color: #AAAAAA
+  --light-gray: #F9F9F9
+ 
+  --small-offset: 16px
+  --middle-offset: 24px
+  --big-offset: 32px
+
+  font-family: 'Ubuntu'
+
+
+.content-item
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: var(--small-offset)
+  
+.main__item-wrapper
+  display: flex
+  align-items: center
+  gap: var(--small-offset)
+
+.container
+  max-width: 1155px
+  padding: 0 10px
+  margin: 0 auto
+
+.content
+  display: flex
+  gap: var(--small-offset)
+  justify-content: space-between
+
+.dialog
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: 8px
+  max-width: 560px
+
+.dialog-left
+  align-self: flex-start
+  display: flex
+  max-width: 500px
+  background: var(--white-color)
+  color: var(--red-color)
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1)
+  border-radius: 48px 48px 48px 8px
+  font-weight: 700
+  font-size: 28px
+  line-height: 100%
+  padding: var(--middle-offset) var(--big-offset)
+  margin: 0
+  align-items: center
+
+.dialog-right
+  display: flex
+  max-width: 500px
+  background: var(--red-color)
+  color: var(--white-color)
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1)
+  border-radius: 48px 48px 8px 48px
+  font-weight: 700
+  font-size: 28px
+  line-height: 100%
+  padding: var(--middle-offset) var(--big-offset)
+  margin: 0
+  align-items: center
+  align-self: flex-end 
+
+  
+.quote
+  max-width: 560px
+  .quote__text
+    margin: 0
+    color: var(--black-color)
+    font-weight: 400
+    font-size: 20px
+    line-height: 150%
+    text-align: center
+  position: relative
+  display: flex
+  gap: var(--small-offset)
+
+.dialog-sticker
+  display: flex
+  width: 32px
+  height: 32px
+  margin-left: var(--small-offset)
